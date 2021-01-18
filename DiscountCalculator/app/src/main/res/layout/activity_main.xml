@@ -4,7 +4,8 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginLeft="10dp"
-    android:layout_marginRight="10dp">
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
 
 
     <TextView
@@ -95,12 +96,14 @@
 
         />
 
-
-
-
-
-
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/dollar"
+            android:text="890"
+            android:textSize="50dp"
+            android:textAlignment="textEnd"
+            android:gravity="end" />
 
 
 
