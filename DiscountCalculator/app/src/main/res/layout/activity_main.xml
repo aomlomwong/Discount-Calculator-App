@@ -72,8 +72,10 @@
 
                 <Button
                     android:layout_width="100dp"
-                    android:layout_height="60dp"
+                    android:layout_height="50dp"
                     android:layout_alignParentRight="true"
+                    android:text="CALCULATE"
+                    android:textSize="10dp"
                     />
 
 
@@ -82,8 +84,16 @@
 
         </LinearLayout>
 
+
+
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Price"
+
+        />
 
 
 
