@@ -19,15 +19,25 @@ class MainActivity : AppCompatActivity() {
         val perPrice = findViewById<EditText>(R.id.perPrice)
         val totalText = findViewById<TextView>(R.id.totalText)
         val btCal = findViewById<Button>(R.id.btcal)
+        val checkbox = findViewById<CheckBox>(R.id.checkbox)
 
         btCal.setOnClickListener(){
 
-            var originalPrice:Int = oriPrice.text.toString().toInt()
-            var percentPrice:Int = perPrice.text.toString().toInt()
+            var originalPrice:Float = oriPrice.text.toString().toFloat()
+            var percentPrice:Float = perPrice.text.toString().toFloat()
 
-            var totalPrice:Int =(originalPrice*percentPrice)/100
+            var totalPrice:Float =(originalPrice*percentPrice)/100
+
+
+            if( checkbox.isChecked()) {
+                var vax:Float = (totalPrice*7)/100
+                totalPrice = totalPrice+vax
+            }
             totalText.text = totalPrice.toString()
+
         }
+
+
 
 
 
