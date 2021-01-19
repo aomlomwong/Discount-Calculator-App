@@ -16,7 +16,7 @@
         />
 
     <EditText
-
+        android:id="@+id/oriprice"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
@@ -27,13 +27,13 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Original Price"
+        android:text="Percent off (%)"
 
 
         />
 
     <EditText
-
+        android:id="@+id/perPrice"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="center"
@@ -54,6 +54,7 @@
             android:layout_weight="1">
 
             <CheckBox
+                android:id="@+id/checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:text=" Include tax 7%"/>
@@ -72,6 +73,7 @@
                 android:layout_height="match_parent">
 
                 <Button
+                    android:id="@+id/btcal"
                     android:layout_width="100dp"
                     android:layout_height="50dp"
                     android:layout_alignParentRight="true"
@@ -97,10 +99,11 @@
         />
 
         <TextView
+            android:id="@+id/totalText"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:background="@drawable/dollar"
-            android:text="890"
+
             android:textSize="50dp"
             android:textAlignment="textEnd"
             android:gravity="end" />
