@@ -70,7 +70,8 @@
             <RelativeLayout
                 android:id="@+id/btbox"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                >
 
                 <Button
                     android:id="@+id/btcal"
@@ -79,6 +80,8 @@
                     android:layout_alignParentRight="true"
                     android:text="CALCULATE"
                     android:textSize="10dp"
+                    android:backgroundTint="#D1D1CD"
+                    android:textColor="@color/black"
                     />
 
 
@@ -99,6 +102,8 @@
         />
 
         <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:id="@+id/totalText"
             android:layout_width="match_parent"
             android:layout_height="80dp"

@@ -27,13 +27,14 @@ class MainActivity : AppCompatActivity() {
             var percentPrice:Float = perPrice.text.toString().toFloat()
 
             var totalPrice:Float =(originalPrice*percentPrice)/100
+            var lastPrice:Float = originalPrice - totalPrice
 
 
             if( checkbox.isChecked()) {
-                var vax:Float = (totalPrice*7)/100
-                totalPrice = totalPrice+vax
+                var vax:Float = (lastPrice*7)/100
+                lastPrice = lastPrice+vax
             }
-            totalText.text = totalPrice.toString()
+            totalText.text = lastPrice.toString()
 
         }
 
